@@ -1,5 +1,4 @@
 import streamlit as st
-from forex_python.converter import CurrencyRates
 import datetime
 
 # Custom CSS Stylish Sidebar & Buttons
