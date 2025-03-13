@@ -1,5 +1,6 @@
 import streamlit as st
 import datetime
+from forex_python.converter import CurrencyRates
 
 # Custom CSS Stylish Sidebar & Buttons
 st.markdown("""
@@ -80,7 +81,6 @@ st.sidebar.markdown("""
 
 
 # Unit Conversion Functions
-from forex_python.converter import CurrencyRates
 def length_converter(value, from_unit, to_unit):
     conversion_factors = {"Meter": 1, "Kilometer": 0.001, "Centimeter": 100, "Inch": 39.3701, "Foot": 3.28084}
     return value * conversion_factors[to_unit] / conversion_factors[from_unit]
